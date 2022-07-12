@@ -1,0 +1,13 @@
+{
+	"token": "your token here",
+	"prefix": "?!",
+	"allowedGuilds": ["allowed servers"],
+	"controlchannel": "channel for control commands",
+	"dailychannel": "channel for daily commands",
+	"yuichannel": "yui channel",
+	"tatsumakichannel": "tatsumaki channel",
+	"mudaechannel": "mudae channel",
+	"poketwochannel": "poketwo channel",
+    "userids": ["all user IDs"],
+    "message": "ignore this message, just testing a self bot thing -Darren"
+}
