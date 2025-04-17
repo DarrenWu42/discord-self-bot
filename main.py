@@ -52,7 +52,7 @@ for filename in os.listdir("cogs"):
 async def loadcog(ctx: commands.Context, cog: str):
     """loads a cog"""
     bot.load_extension(f"cogs.{cog}")
-    await ctx.send("Cog Loaded")
+    await ctx.send(f"Cog Loaded: {cog}")
 
 @bot.command(name="listextensions")
 async def listextensions(ctx: commands.Context):
@@ -61,10 +61,10 @@ async def listextensions(ctx: commands.Context):
         await ctx.send(module)
 
 @bot.command(name="reload")
-async def _reload(ctx: commands.Context, cog: str):
+async def reload(ctx: commands.Context, cog: str):
     """reloads a cog"""
     bot.reload_extension(f"cogs.{cog}")
-    await ctx.send("Reloaded Module")
+    await ctx.send(f"Reloaded Cog: {cog}")
 
 @bot.event
 async def on_ready():
